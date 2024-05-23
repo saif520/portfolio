@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saifuddin Dhali - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cecaca;
+            font-size: 20px;
+            /* font-style: italic; */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: black;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        header a:hover {
+            color: #77aaff;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('showcase.jpg') no-repeat 0 -400px;
+            background-size: cover;
+            text-align: center;
+            color: #56bd58;
+            position: relative;
+        }
+        #showcase-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(33, 33, 33, 0.5);
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #main {
+            padding: 20px;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px 0;
+            background: #c2a5c1;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .footer {
+            background: #0d0d0d;
+            color: #fcf4f4;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .footer p {
+            margin: 0;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            transition: opacity 0.4s;
+            z-index: 1000;
+        }
+        #back-to-top:hover {
+            background-color: #555;
+        }
+        .all-link{
+            color: #4a33a6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Saifuddin Dhali</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#professional-summary">Summary</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div id="showcase-overlay"></div>
+        <div class="container">
+            <h1>Full Stack Web Developer</h1>
+            <p>Creating seamless integrations between front-end and back-end components</p>
+        </div>
+    </section>
+
+    <div id="main" class="container">
+        <section id="professional-summary" class="section">
+            <h2>Professional Summary</h2>
+            <p>Dynamic Full Stack Web Developer with expertise in JavaScript, MongoDB, and the MERN stack. Adept at creating seamless integrations between front-end and back-end components, designing efficient server-side APIs, and optimizing database queries. Strong problem-solving and effective communication skills drive success in collaborative development environments.</p>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Full-Stack Web Development, Masai School, Bengaluru, Karnataka</strong> (October 2023 - present)</li>
+                <li><strong>Bachelor of Engineering, Jadavpur University, Kolkata, West Bengal</strong> (September 2018 - July 2021)</li>
+            </ul>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <p>JavaScript | MongoDB | Git | HTML5 | CSS3 | Data Structure and Algorithm | MySql | C++</p>
+            <h3>Soft Skills</h3>
+            <p>Problem Solving | Attention to Detail | Teamwork | Time Management</p>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <h3>Bewakoof Clone</h3>
+            <ul>
+                <li>Developed and integrated product listing pages using Node.js and JavaScript.</li>
+                <li>Implemented user account functionality allowing users to track orders and manage preferences.</li>
+                <li>Designed a shopping cart feature enhancing overall user experience.</li>
+                <li>Filter: filters such as size, color, price range, and category to narrow down their choices.</li>
+                <li>Adding Products: When a user finds a product they want to purchase, they can click on the "Add to Bag" button. This action adds the item to their virtual shopping bag or cart.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Git | HTML5 | CSS3 | Bootstrap | JavaScript | Node.js | Responsive Web Design</p>
+            <p><strong>Deployed Link:</strong> <a class="all-link" href="https://bewakoooff.netlify.app/" target="_blank">Bewakoof</a></p>
+            <p><strong>Github Repo Link:</strong> <a class="all-link" href="https://github.com/saif520/Chenab-Pointer-011" target="_blank">Project Repo</a></p>
+        </section>
+
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <p>Zoom Marathon Challenge (ZMC) - Masai School</p>
+            <p><strong>ZMC Certificate Link:</strong> <a class="all-link" href="https://65f464925193c202f29c7582--deluxe-pithivier-453ecd.netlify.app/" target="_blank">ZMC Certificate</a></p>
+        </section>
+
+        <section id="achievements" class="section">
+            <h2>Achievements</h2>
+            <h3>Leetcode problem solving</h3>
+            <ul>
+                <li>Solved a diverse set of problems across various topics such as algorithms, data structures, dynamic programming, and system design.</li>
+                <li>Regularly participated in LeetCode weekly and bi-weekly contests.</li>
+                <li>Engaged with the LeetCode community by discussing problems and solutions, contributing to forums, and reviewing others’ code.</li>
+            </ul>
+            <p><strong>LeetCode Profile:</strong> <a class="all-link" href="https://leetcode.com/u/saifuddinDhali/" target="_blank">LeetCode</a></p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p><strong>Phone:</strong> +91 9851902688</p>
+            <p><strong>Email:</strong> saifuddin2k17@gmail.com</p>
+            <p><strong>Location:</strong> Basirhat, West Bengal</p>
+            <p><a class="all-link" href="https://www.linkedin.com/in/saifuddin-dhali-777b3b230/">LinkedIn</a> | <a class="all-link" href="https://github.com/saif520">Github</a></p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>Saifuddin Dhali &copy; 2024</p>
+    </footer>
+
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Back to top button
+        window.addEventListener('scroll', function() {
+            var backToTopButton = document.getElementById("back-to-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        document.getElementById("back-to-top").addEventListener('click', function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+    </script>
+</body>
+</html>
